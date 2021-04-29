@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+
+	<phpunit bootstrap="vendor/autoload.php">
+	    <testsuites>
+	        <testsuite name="Example">
+	            <file>Test.php</file>
+	        </testsuite>
+	    </testsuites>
+	    
+	     <filter>
+	        <whitelist processUncoveredFilesFromWhitelist="true">
+	                <file>Test.php</file>
+	        </whitelist>
+	    </filter>
+	    
+	 <logging>
+	   <log type="coverage-clover" target="clover.xml"/>
+	 </logging>
+	</phpunit>
